@@ -1,5 +1,4 @@
-# You Only Look Once (YOLO)  V3
-
+# Object detection using You Only Look Once (YOLO)  V3
 
 "YOLO (You Only Look Once) is a modern method for object detection in images, which has the main advantage of being able to detect multiple objects in a single pass. Unlike other methods such as RCNN, which divide the image into multiple boxes and feed each box to a CNN for detection, YOLO works across the entire image at once. The first step in YOLO is to divide the image into SxS grids, where S is a hyperparameter that determines the size of the grid. For example, if S=19, the output will be a 19x19 grid, containing 361 individual cells. Each cell has multiple values, including a confidence score (pc) indicating whether the cell contains an object or not, as well as the center coordinates (cx, cy), width, and height of the object. In some cases, a grid cell may contain multiple object centers, for which anchor boxes are used. For example, a cell might have 3 or 4 anchor boxes. In this case, the output value will be (19x19,5, 3) or (361, 5 , 4), depending on the number of anchor boxes. The input to YOLO is an image, and the output is a tensor containing the predicted values for all grid cells and anchor boxes."
 
